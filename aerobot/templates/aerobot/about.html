@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'about.css'%}">
+        <script src="https://kit.fontawesome.com/yourcode.js"></script>
+         <!-- /Fonts -->
+         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+         <!-- //Fonts -->
+ </head>
+  <body>
+    <section class="top-img">
+      <section class="top img-fluid">
+
+        <!-- navbar starts -->
+
+
+          <nav class="navbar navbar-expand-lg navbar-light  ">
+
+    <a class="navbar-brand ml-auto" href="{% url 'aerobot:home'%}"><h3>STES AEROBOTS</h3></a>
+
+    <button class="navbar-toggler" style="float:left;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:home'%}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:about'%}">About</a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:gallery'%}">Gallery</a>
+        </li>
+        
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:contact'%}">Contact</a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'blog:blog_list'%}">Blogs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+          <!-- navbar ends -->
+
+
+          <!-- Content section  -->
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+
+          <!-- Content section ends -->
+
+      </section>
+    </section>
+
+{% block content %}
+
+<section class="team" >
+  <br>
+  <h1 class="text-center">We Are The AEROBOTS</h1>
+  <br>
+  <div class="container">
+    <div class="col-md-10 offest-2 mx-auto">
+      <img src="{% static 'images/team.jpeg' %}" class="img-fluid team-img" alt="None">
+      <div class="container">
+        <br>
+        <p class="text-center">We are engaging in the International Aerial Robotics Championship (IARC), China, to apply our engineering solutions to autonomous technology.</p>
+        <a href="#" class="square_btn ">BUTTON</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<section class="origin">
+  <div class="container">
+    <h1 class="text-center">Our Origin</h1>
+    <br>
+    <br>
+    <p>From over 6 Institutes, under STES, spread over Pune, the team consists of 34 (and growing…) enthusiastic members. A group of engineering undergraduates founded the team with a notion of doing something bigger than themselves, and soon, their</p>
+    <p>passion spread like wildfire catching the attention of more than 108 equally earnest minds, but only the best could make it into the team.</p>
+    <br>
+    <p>STES Aerobots craves to be the team that contended alongside top universities of the world like Stanford University and Massachusetts University and prove to be the best among them, and raise STES and India’s name to newer heights.</p>
+    <br>
+  </div>
+</section>
+<br>
+
+<br>
+<br>
+<br>
+<section class="competetion">
+  <div class="container">
+    <h1 class="text-center">The Competetion</h1>
+    <br>
+    <br>
+    <p>The main purpose of the competition is to modify technology in order to benefit the world with the proposed missions.</p>
+    <br>
+    <p>Each Mission builds upon the previous mission and brings about a more efficient and advanced growth in the technology to the point that the last one may start to sound easy.</p>
+    <br>
+    <p>Mission 9 raises the stakes, while continuing to advance autonomous capabilities, by now integrating completely new elements such as manipulation of large objects, interaction with moving frames of reference, aerial robotic repair of mobile platforms, Navigation using only GPS/Optical/Magnetic, use ONLY on-board computing and many more, which will lead to a unique and perhaps unexpected solution to the problem statement.</p>
+    <br>
+  </div>
+</section>
+
+{% endblock%}
+<!-- Footer -->
+<br>
+<br>
+<footer class="footer">
+  <br>
+  <br>
+  <div class="row container mx-auto">
+    <div class="col-md-4">
+      <h3>Catch us on </h3>
+      <br>
+      <p>Follow us to get the latest updates</p>
+      <a href="https://www.instagram.com/stesaerobotsteam/" target="_blank"><h1 class="fa fa-instagram fa-2x p-2"></h1></a>
+      <a href="https://www.facebook.com/stesaerobotsteam" target="_blank"><h1 class="fa fa-facebook fa-2x p-2"></h1></a>
+      <a href="linkedin.com/company/stesaerobotsteam" target="_blank"><h1 class="fa fa-linkedin fa-2x p-2"></h1></a>
+      <a href="https://twitter.com/stes_aerobots" target="_blank"><h1 class="fa fa-twitter fa-2x p-2"></h1></a>
+      <a href="https://www.youtube.com/channel/UCdIhDsXZw8BeL9gm0MCax7g?view_as=subscriber" target="_blank"><h1 class="fa fa-youtube fa-2x p-2"></h1></a>
+    </div>
+    <div class="col-md-4">
+      <h3>Address</h3>
+      <div class="footer-text">
+                            <p>AS. No. 44/1, Off. Sinhgad Road, Vadgaon Budruk, Pune, Maharashtra 411041    </p>
+                            <p>Phone : +91 81494 01535</p>
+							<p>Phone :  +91 72187 74567</p>
+                            <p>Email : <a href="stesaerobotsteam@sinhgad.edu">stesaerobotsteam@sinhgad.edu</a></p>
+                        </div>
+    </div>
+    <div class="col-md-4 map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30274.72886526711!2d73.836317!3d18.468202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8dc457e562ff094c!2sSinhgad%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1567937653312!5m2!1sen!2sin" width="inherit" height="inherit" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+  <br>
+  <br>
+</footer>
+<!-- Footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.js" integrity="sha512-eUJ3eP9+avp5kHKhfx5gB0vzLEgMkZiOmZcpVqJmlg9hMMse2SChMOTSDWl6oYGfmYW2N7oO/W6CqpgYBneqKw==" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/27d296d66c.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

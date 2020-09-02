@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'sample.css' %}">
+        <script src="https://kit.fontawesome.com/yourcode.js"></script>
+         <!-- /Fonts -->
+         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+         <!-- //Fonts -->
+   </head>
+    <body>
+
+<section class="top img-fluid">
+
+  <!-- navbar starts -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light  ">
+
+    <a class="navbar-brand ml-auto" href="{% url 'aerobot:home'%}"><h3>STES AEROBOTS</h3></a>
+
+    <button class="navbar-toggler" style="float:left;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:home'%}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:about'%}">About</a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:gallery'%}">Gallery</a>
+        </li>
+        
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'aerobot:contact'%}">Contact</a>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="{% url 'blog:blog_list'%}">Blogs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- navbar ends -->
+
+
+    <!-- Content section  -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="col-md-6 offest-6 top-content">
+      <div class="col-md-12 offest-0">
+        <h2>Fabricate The Unfathomable</h2>
+        <p>Our creed is to push Aerial Robotics forward in a way that has never been done before and to explore the uncharted realm of ideas.</p>
+
+        <button type="button" class="semi-transparent-button">Read More</button>
+      </div>
+
+    </div>
+    <!-- Content section ends -->
+
+</section>
+
+
+<section class="container s-2">
+<div class="row">
+  <div class="col-md-6 " >
+    <img class="img-fluid" src="{% static 'images/iarcs.png' %}"alt="None" >
+  </div>
+
+<div class="col-md-6">
+  <br>
+  <h3>International Aerial Robotics Championship (IARC), China</h3>
+  <p></p>
+  <p></p>
+  <p> We are engaging in the International Aerial Robotics Championship (IARC), China, to apply our engineering solutions to autonomous technology</p>
+
+  <ul class="ml-4">
+      <li>
+        Aerial robotic repair of mobile platforms
+      </li>
+      <li>
+        Fast outdoor operations over long distance
+      </li>
+      <li>
+        Interaction with moving frames of reference
+
+      </li>
+      <li>
+        Optical recognition
+      </li>
+      <li>
+        Use of only on-board computing
+      </li>
+      <li>
+        Navigation using GPS/Optical/Magnetic only
+      </li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<br>
+<section class="department container">
+  <h1 class="text-center">Our Departments</h1>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+        <!-- card -->
+        <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'images/electronics.jpg'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5>ELECTRONICS ENGINEERS</h5>
+            <p class="card-text">Leading the Interfacing, Circuitry Design and Testing</p>
+          </div>
+        </div>
+        <br>
+        <!-- card -->
+    </div>
+    <div class="col-md-4">
+      <!-- card -->
+      <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/programming.jpg'%}" alt="Card image cap">
+        <div class="card-body">
+          <h5>PROGRAMMING PIONEERS</h5>
+          <p class="card-text">Tackling the task of making the Aerial Vehicle Autonomous</p>
+        </div>
+      </div>
+      <br>
+      <!-- card -->
+    </div>
+    <div class="col-md-4">
+      <!-- card -->
+      <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/design.jpg'%}" alt="Card image cap">
+        <div class="card-body">
+          <h5>MECHANICAL MASTERS</h5>
+          <p class="card-text">Designing robust engineering solutions</p>
+        </div>
+      </div>
+      <br>
+      <!-- card -->
+    </div>
+  </div>
+<br>
+</section>
+
+<section class="leaders">
+<div class="container" >
+  <h1 class="text-center">Our Leaders</h1>
+  <br>
+  <div class="row container ">
+    <div class="col-md-4 text-center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-Y0QIyTjBnAmGvDOduQIRE6J0PI61Akag2g&usqp=CAU" class=" img-fluid" alt="">
+      <p>some text here !</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-Y0QIyTjBnAmGvDOduQIRE6J0PI61Akag2g&usqp=CAU" class=" img-fluid" alt="">
+      <p>some text here !</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-Y0QIyTjBnAmGvDOduQIRE6J0PI61Akag2g&usqp=CAU" class=" img-fluid" alt="">
+      <p>some text here !</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+</section>
+<br>
+<br>
+<section class="sponsers container">
+<h1 class="text-center">Our Sponsers</h1>
+<div class="row container ">
+{% for sponser in sponsers %}
+  <div class="col-md-3 text-center">
+    <img src="{{ sponser.link }}" class="" alt="">
+    <br>
+    <b><p class='text-center'>{{ sponser.name| title }}</p></b>
+  </div>
+  
+{% endfor %}  
+  
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<br>
+<br>
+<footer class="footer">
+  <br>
+  <br>
+  <div class="row container mx-auto">
+    <div class="col-md-4">
+      <h3>Catch us on </h3>
+      <br>
+      <p>Follow us to get the latest updates</p>
+      <a href="https://www.instagram.com/stesaerobotsteam/" target="_blank"><h1 class="fa fa-instagram fa-2x p-2"></h1></a>
+      <a href="https://www.facebook.com/stesaerobotsteam" target="_blank"><h1 class="fa fa-facebook fa-2x p-2"></h1></a>
+      <a href="linkedin.com/company/stesaerobotsteam" target="_blank"><h1 class="fa fa-linkedin fa-2x p-2"></h1></a>
+      <a href="https://twitter.com/stes_aerobots" target="_blank"><h1 class="fa fa-twitter fa-2x p-2"></h1></a>
+      <a href="https://www.youtube.com/channel/UCdIhDsXZw8BeL9gm0MCax7g?view_as=subscriber" target="_blank"><h1 class="fa fa-youtube fa-2x p-2"></h1></a>
+    </div>
+    <div class="col-md-4">
+      <h3>Address</h3>
+      <div class="footer-text">
+                            <p>AS. No. 44/1, Off. Sinhgad Road, Vadgaon Budruk, Pune, Maharashtra 411041    </p>
+                            <p>Phone : +91 81494 01535</p>
+							<p>Phone :  +91 72187 74567</p>
+                            <p>Email : <a href="stesaerobotsteam@sinhgad.edu">stesaerobotsteam@sinhgad.edu</a></p>
+                        </div>
+    </div>
+    <div class="col-md-4 map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30274.72886526711!2d73.836317!3d18.468202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8dc457e562ff094c!2sSinhgad%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1567937653312!5m2!1sen!2sin" width="inherit" height="inherit" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+  <br>
+  <br>
+</footer>
+<!-- Footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.js" integrity="sha512-eUJ3eP9+avp5kHKhfx5gB0vzLEgMkZiOmZcpVqJmlg9hMMse2SChMOTSDWl6oYGfmYW2N7oO/W6CqpgYBneqKw==" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/27d296d66c.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

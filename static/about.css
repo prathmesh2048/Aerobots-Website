@@ -1,0 +1,174 @@
+@font-face {
+font-family: 'Xirod-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Xirod-Regular'), url('xirod.woff') format('woff');
+}
+
+body{
+
+}
+.top{
+  background-image: url('images/drone-4980569_19202.jpg');
+
+  /* Full height */
+ height: 50vh;
+ max-width: 100%;
+
+background-attachment: fixed;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+
+ background-size: cover;
+}
+
+.navbar-brand{
+  color: white!important;
+  font-family:'Xirod-Regular';
+}
+.nav-link{
+
+  font-weight: 700;
+}
+.navbar-brand h3{
+font-size: 23px;
+
+}
+
+.nav-item{
+  font-size: 17px;
+  font-weight: 700;
+}
+.top-content{
+padding-left: 0.4em;
+
+
+}
+.top-content h2{
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+}
+.top-content p{
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.14em;
+}
+.semi-transparent-button {
+	display: inline-block;
+	padding: 10px 14px;
+	color: #FFF;
+	border: 1px solid #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 120%;
+	background-color: rgba(255,255,255, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
+	cursor: pointer;
+}
+.semi-transparent-button:hover {
+	background-color: rgba(255,255,255, 0.5);
+	color: #FFF;
+}
+/* starting the team section css */
+.team h1{
+font-size: 2.4em;
+font-weight: bold;
+}
+
+.team p{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1.2em;
+}
+.team-img{
+  max-height:60vh;
+  width:100%;
+  box-shadow: 10px 12px 15px -8px rgba(151,214,237,1);
+}
+.square_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    float: right;
+}
+
+.square_btn:hover {
+    background: #67c5ff;
+    color: white;
+
+}
+/* ending the team section css */
+/* origin starting */
+.origin{
+  background-image: url('images/coverdrone.jpg');
+
+  /* Full height */
+
+ max-width: 100%;
+
+background-attachment: fixed;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.origin h1{
+  padding-top: 1em;
+  font-weight:700;
+
+}
+.origin p{
+  font-size: 1.1em;
+  letter-spacing: 0.08em;
+  color: #fff;
+  font-weight: 500;
+}
+/* origin ending */
+/* Competetion*/
+.competetion h1{
+  padding-top: 1em;
+  font-weight:700;
+
+}
+.competetion p{
+  font-size: 1.1em;
+  letter-spacing: 0.08em;
+
+  font-weight: 500;
+}
+/* Competetion*/
+/* footer */
+.sponsers h1{
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.08em;
+}
+.footer{
+  background-color: #1e272e;
+  color:white;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+/* footer */
+.address p{
+  color: black;
+  line-height: 1.7em;
+  font-size: 1.3em;
+}
+.contact-form h1{
+  font-size: 3em;
+  font-weight: bold;
+}

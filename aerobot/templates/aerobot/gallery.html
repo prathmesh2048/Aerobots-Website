@@ -1,0 +1,33 @@
+{% extends 'about.html' %}
+{% load static %}
+{% block content %}
+<section class="gallery" >
+  <br>
+  <h1 class="text-center">Gallery</h1>
+  <br>
+  <div class="container">
+    <div class="row">
+    {% for gal in gallery %}
+    <div class="col-md-3 p-2">
+      <img src="{{ gal.link }}" class="img-fluid" alt="">
+    </div>
+    {% endfor %}
+    
+    </div>
+
+  </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<br>
+<br>
+<br> 
+{% endblock %}
+
+
