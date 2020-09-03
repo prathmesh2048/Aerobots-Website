@@ -15,6 +15,12 @@ class Blog(models.Model):
             self.slug = slugify(self.title)
         super(Blog, self).save(args, **kwargs)
 
+    def image2(self):
+        raw = self.image
+        x = raw.split('/')[5]
+        y =  'https://drive.google.com/thumbnail?id=' + x
+        return y        
+
     def __str__(self):
         return self.title
 
