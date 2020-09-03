@@ -21,16 +21,23 @@ class Sponsers(models.Model):
     def __str__(self):
         return self.name
 
+    def image1(self):
+        raw = self.link
+        x = raw.split('/')[5]
+        y =  'https://drive.google.com/thumbnail?id=' + x
+        return y
+
     class Meta:
         verbose_name = 'Sponsers'
         verbose_name_plural = 'Sponsers'
 
 
 class Gallery(models.Model):
+    name = models.CharField(max_length=100, null=True)
     link = models.CharField(max_length=100000000,null=True)
 
     def __str__(self):
-        return self.link
+        return self.name
 
     def image(self):
         raw = self.link
@@ -41,3 +48,4 @@ class Gallery(models.Model):
     class Meta:
         verbose_name = 'Gallery'
         verbose_name_plural = 'Gallery'
+       
