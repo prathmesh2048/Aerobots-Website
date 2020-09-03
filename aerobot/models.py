@@ -32,6 +32,12 @@ class Gallery(models.Model):
     def __str__(self):
         return self.link
 
+    def image(self):
+        raw = self.link
+        x = raw.split('/')[5]
+        y =  'https://drive.google.com/thumbnail?id=' + x
+        return y        
+
     class Meta:
         verbose_name = 'Gallery'
         verbose_name_plural = 'Gallery'
