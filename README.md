@@ -6,3 +6,4 @@ to run this App in your local machine -:
 2.)  now cd to 'Scripts' and the type 'activate' to activate the virtual environment
 then run the server !  :-)
 ![](3.gif)
+Sample - Google Chrome 2020-08-31 12-47-40.mp4
